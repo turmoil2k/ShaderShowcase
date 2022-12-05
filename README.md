@@ -4,7 +4,7 @@ WIP - My shader showcase
 #### ***FIX FOR SKYBOX STRETCHING THROUGH SHADER CODE***
 ```
 in vert shader:
-o.worldPos = (unity_ObjectToWorld,v.vertex);
+o.worldPos = mul(unity_ObjectToWorld,v.vertex);
 
 in frag shader:
 float3 worldPos = normalize(i.worldPos);
