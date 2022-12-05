@@ -44,7 +44,7 @@ Shader "Unlit/UL_Sky_Shader"
             {
                 v2f o;
                 
-                o.worldPos = (unity_ObjectToWorld,v.vertex);
+                o.worldPos = mul(unity_ObjectToWorld,v.vertex);
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
