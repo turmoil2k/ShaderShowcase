@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ULSkyboxSphere
+  m_Shader: {fileID: 4800000, guid: 4007d6d4596e44fd99d97260529dccc8, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CloudTex:
+        m_Texture: {fileID: 2800000, guid: abed9482e8dfd4f9ea0be01bf6d0d2da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistTex:
+        m_Texture: {fileID: 2800000, guid: 6e20c2197decc4e9abe4f75578ce8f64, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5ef5d12e60edb4ba59774225877e59a7, type: 3}
+        m_Scale: {x: 12, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - _RandNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 56a0b286a1266427099c516751037282, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Offset: 0.1
+    - _Offset2: 0
+    - _SunClipSize: 0.18
+    - _SunSize: 0.2
+    - _a: 3
+    - _b: 0
+    m_Colors:
+    - _ColorA: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+    - _ColorB: {r: 0, g: 0.702509, b: 0.8490566, a: 1}
+    - _ColorC: {r: 4, g: 4, b: 4, a: 1}
+    - _ColorCloud: {r: 5.3403134, g: 4.2837157, b: 0, a: 0}
+    - _ColorH: {r: 0.094130136, g: 0, b: 0.5754717, a: 1}
+    - _ColorS: {r: 0, g: 0.6286567, b: 0.7924528, a: 1}
+    - _ColorSun: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - _Vector: {r: 0.02, g: 0.01, b: 25, a: 0.04}
+    - _VectorS: {r: 0.1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
