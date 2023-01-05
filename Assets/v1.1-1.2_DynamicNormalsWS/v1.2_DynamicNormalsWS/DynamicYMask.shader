@@ -35,7 +35,7 @@ Shader "Unlit/DynamicYMask"
                 float4 vertex : SV_POSITION;
                 float3 worldPos : TEXCOORD1;
                 float3 normal : TEXCOORD2;
-                float3 tangent : TEXCOORD3;
+                float4 tangent : TEXCOORD3;
             };
 
             sampler2D _MainTex;
@@ -53,7 +53,7 @@ Shader "Unlit/DynamicYMask"
                 //UNITY_TRANSFER_FOG(o,o.vertex);
                 o.worldPos = mul(unity_ObjectToWorld,v.vertex);
                 o.normal = UnityObjectToWorldDir(v.normal);
-                o.tangent = UnityObjectToWorldDir(v.tangent.xyz);
+                o.tangent = float4(UnityObjectToWorldDir(v.tangent.xyz),v.tangent.w);
                 return o;
             }
 
